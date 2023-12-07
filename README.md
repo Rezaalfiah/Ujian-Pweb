@@ -3,3 +3,4 @@
 # Kelas = 3IA15
 # NPM = 51421294
 # Universitas Gunadarma
+Note --> Tempatkan folder pada htdocs untuk menggunakan nya
