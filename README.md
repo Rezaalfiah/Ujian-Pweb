@@ -10,15 +10,20 @@
  <!-- Jika inventory.sql tidak dapat dibaca, maka lakukan create database pada cmd mysql dengan nama database inventory -->
 
 **Membuat database inventory**
-> CREATE DATABASE inventory;
-> 
->  USE inventory;
+
+> CREATE DATABASE IF NOT EXISTS inventory;
 >
-> CREATE TABLE products (
-> product_id INT AUTO_INCREMENT PRIMARY KEY,
-> product_name VARCHAR(255) NOT NULL,
-> quantity INT NOT NULL,
-> price VARCHAR(255));
+> -- Switch to the 'inventory' database
+> 
+> USE inventory;
+
+> -- Create the 'products' table
+> CREATE TABLE IF NOT EXISTS products (
+>   product_id INT AUTO_INCREMENT PRIMARY KEY,
+>   product_name VARCHAR(255) NOT NULL,
+>   quantity INT NOT NULL,
+>   price INT NOT NULL
+> );
 
 **Membuat database web_project**
 > CREATE DATABASE web_project
