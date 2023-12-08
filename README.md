@@ -9,7 +9,6 @@
 <!--Tempatkan folder pada htdocs untuk menggunakan nya -->
  <!-- Jika inventory.sql tidak dapat dibaca, maka lakukan create database pada cmd mysql dengan nama database inventory -->
 
-CREATE DATABASE inventory;
 > CREATE DATABASE inventory;
 > 
 >  USE inventory;
